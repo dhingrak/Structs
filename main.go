@@ -16,16 +16,16 @@ type person struct {
 func main() {
 
 	jim := person{
-		firstName: "Jim",
-		lastName:  "Party",
+		firstName: "Kunal",
+		lastName:  "Dhingra",
 		contactInfo: contactInfo{
-			email:   "jimparty@gmail.com",
+			email:   "kdhingra55@gmail.com",
 			zipCode: 94000,
 		},
 	}
 
 	jim.print()
-	jim.updateName("Alex")
+	jim.updateName("Testing")
 	jim.print()
 
 }
