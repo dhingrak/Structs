@@ -25,7 +25,7 @@ func main() {
 	}
 
 	jim.print()
-	jim.updateName("Testing")
+	jim.updateName("Kanu")
 	jim.print()
 
 }
