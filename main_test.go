@@ -7,7 +7,7 @@ func TestIsWorking(t *testing.T) {
 	result := true
 
 	if result != true {
-		t.Errorf("Assert failed, Expected true, got False")
+		t.Errorf("Assert failed, Expected true, got False, hey testing")
 	}
 
 }
