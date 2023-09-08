@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 type contactInfo struct {
 	email   string
@@ -14,7 +17,6 @@ type person struct {
 }
 
 func main() {
-
 	jim := person{
 		firstName: "Kunal",
 		lastName:  "Dhingra",
@@ -27,6 +29,14 @@ func main() {
 	jim.print()
 	jim.updateName("Kanu")
 	jim.print()
+
+	boringEnabled := os.Getenv("boringcrypto")
+
+	if len(boringEnabled) != 0 {
+		fmt.Println("Boring crypto enabled")
+	} else {
+		fmt.Println("Boring crypto disabled")
+	}
 
 }
 
